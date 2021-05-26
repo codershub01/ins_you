@@ -12,6 +12,8 @@ selenium = "*"
 django-heroku = "*"
 moviepy = "*"
 pytube = "*"
+psycopg2-binary = "8"
+
 
 [requires]
 python_version = "3.7"
