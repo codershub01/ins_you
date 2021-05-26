@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import  os
+import django_heroku
 # import os , django_heroku, dj_database_url
 # from decouple import config
 
@@ -25,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-dt9j98zk==+$7@gu&b(2p%=c5a)i#n2viib982&)0bsl#%q@ce'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(os.environ.get("DEBUG","False"))
 
 # ALLOWED_HOSTS = ["https://react-you-insta.herokuapp.com/"]
 ALLOWED_HOSTS = []
@@ -147,3 +149,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     )
 # }
 # >>>>>>> b10f6c82253fb399ed6056e00c65c6924b9cd2a0
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+django_heroku.settings(locals())
