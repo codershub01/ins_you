@@ -9,4 +9,12 @@ class you_serial(serializers.Serializer):
 
 
 class igtv_serial(serializers.Serializer):
-    url = serializers.CharField(max_length=200, required=True)
+    url = serializers.CharField(max_length=200)
+
+
+# class you_stream(serializers.ModelSerializer):
+#     url = serializers.CharField(max_length=200)
+#
+#     class Meta :
+#         model = you_url
+#         fields = ['url']

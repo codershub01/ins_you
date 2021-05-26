@@ -113,3 +113,12 @@ def igtv(request):
             }
             return Response(res,status=status.HTTP_200_OK)
         return Response(serializer.errors,status=status.HTTP_404_NOT_FOUND)
+
+@api_view(["GET"])
+def check_get(request):
+    if request.method == "GET":
+        res= {
+            "status":"Get is  callable"
+        }
+        return Response(res,status.HTTP_200_OK)
+    return Response({"status":'Get is not callable'},status.HTTP_400_BAD_REQUEST)

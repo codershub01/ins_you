@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-dt9j98zk==+$7@gu&b(2p%=c5a)i#n2viib982&)0bsl#%q@ce
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://react-you-insta.herokuapp.com/"]
+# ALLOWED_HOSTS = ["https://react-you-insta.herokuapp.com/"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -126,7 +127,7 @@ STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-`#
+
 # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # django_heroku.settings(locals())
 #

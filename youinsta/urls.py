@@ -22,5 +22,6 @@ urlpatterns = [
     path('youtube/download/search/',views.you),
     path('download/mp3/',views.mp3),
     path('check/streams/',views.Resolution),
+    path('getstreams/',views.check_get),
     path('download/igtv/',views.igtv)
 ]
