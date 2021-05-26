@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-dt9j98zk==+$7@gu&b(2p%=c5a)i#n2viib982&)0bsl#%q@ce
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://dashboard.heroku.com']
+ALLOWED_HOSTS = ["https://react-you-insta.herokuapp.com/"]
 
 
 # Application definition
